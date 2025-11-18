@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogJadwal</class>
+ <widget class="QMainWindow" name="DialogJadwal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>436</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>6</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tanggal Sidang</string>
+    </property>
+   </widget>
+   <widget class="QDateTimeEdit" name="editTanggalSidang">
+    <property name="geometry">
+     <rect>
+      <x>71</x>
+      <y>6</y>
+      <width>90</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>33</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agenda</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="editAgenda">
+    <property name="geometry">
+     <rect>
+      <x>71</x>
+      <y>33</y>
+      <width>359</width>
+      <height>122</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>163</y>
+      <width>25</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lokasi</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editLokasi">
+    <property name="geometry">
+     <rect>
+      <x>71</x>
+      <y>163</y>
+      <width>97</width>
+      <height>19</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnSimpanJadwal">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>190</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Simpan</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnBatal">
+    <property name="geometry">
+     <rect>
+      <x>6</x>
+      <y>212</y>
+      <width>56</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Batal</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>436</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHalaman_Utama">
+    <property name="title">
+     <string>Halaman Utama</string>
+    </property>
+    <addaction name="actionData_Anggota"/>
+    <addaction name="actionData_Film"/>
+    <addaction name="actionData_Admin"/>
+   </widget>
+   <addaction name="menuHalaman_Utama"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionData_Anggota">
+   <property name="text">
+    <string>Data Anggota</string>
+   </property>
+  </action>
+  <action name="actionData_Film">
+   <property name="text">
+    <string>Data Film</string>
+   </property>
+  </action>
+  <action name="actionData_Admin">
+   <property name="text">
+    <string>Data Admin</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

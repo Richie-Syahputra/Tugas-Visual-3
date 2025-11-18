@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sistem Informasi Manajemen LBH</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="4">
+     <widget class="QLabel" name="labelJudulUtama">
+      <property name="text">
+       <string>Daftar Perkara Aktif</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="4">
+     <widget class="QTableWidget" name="tableViewUtama">
+      <property name="selectionBehavior" stdset="0">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="editTriggers" stdset="0">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QPushButton" name="btnRefresh">
+      <property name="text">
+       <string>Refresh Data</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="btnUbahPerkara">
+      <property name="text">
+       <string>Ubah Perkara Terpilih</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="btnHapusPerkara">
+      <property name="text">
+       <string>Hapus Perkara Terpilih</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="btnBukaJadwal">
+      <property name="text">
+       <string>Lihat/Tambah Jadwal Sidang</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionKeluar"/>
+   </widget>
+   <widget class="QMenu" name="menuData_Master">
+    <property name="title">
+     <string>Data Master</string>
+    </property>
+    <addaction name="actionBukaKlien"/>
+    <addaction name="actionBukaAdvokat"/>
+   </widget>
+   <widget class="QMenu" name="menuTransaksi">
+    <property name="title">
+     <string>Transaksi</string>
+    </property>
+    <addaction name="actionBukaPerkara"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuData_Master"/>
+   <addaction name="menuTransaksi"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionKeluar">
+   <property name="text">
+    <string>Keluar</string>
+   </property>
+   <property name="objectName">
+    <string>actionKeluar</string>
+   </property>
+  </action>
+  <action name="actionBukaKlien">
+   <property name="text">
+    <string>Manajemen Data Klien</string>
+   </property>
+   <property name="objectName">
+    <string>actionBukaKlien</string>
+   </property>
+  </action>
+  <action name="actionBukaAdvokat">
+   <property name="text">
+    <string>Manajemen Data Advokat</string>
+   </property>
+   <property name="objectName">
+    <string>actionBukaAdvokat</string>
+   </property>
+  </action>
+  <action name="actionBukaPerkara">
+   <property name="text">
+    <string>Tambah Perkara Baru</string>
+   </property>
+   <property name="objectName">
+    <string>actionBukaPerkara</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

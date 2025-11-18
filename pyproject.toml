@@ -1,0 +1,5 @@
+[project]
+name = "PySide Widgets Project"
+
+[tool.pyside6-project]
+files = ["anggota.py", "crud.py", "form.ui", "formAnggota.ui", "mainwindow.py"]

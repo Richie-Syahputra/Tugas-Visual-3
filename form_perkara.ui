@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogPerkara</class>
+ <widget class="QMainWindow" name="DialogPerkara">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>436</width>
+    <height>272</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="2">
+     <widget class="QLineEdit" name="editNomorPerkara">
+      <property name="text">
+       <string>Nomor Perkara</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="2">
+     <widget class="QLineEdit" name="editJenisPerkara">
+      <property name="text">
+       <string>Jenis Perkara</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QDateEdit" name="editTanggalDaftar"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Status Perkara</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QComboBox" name="comboStatusPerkara">
+      <property name="currentText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Klien</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QComboBox" name="comboPilihKlien"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Advokat</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="2">
+     <widget class="QComboBox" name="comboPilihAdvokat">
+      <property name="editable">
+       <bool>false</bool>
+      </property>
+      <property name="currentText">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QPushButton" name="btnBatal">
+      <property name="text">
+       <string>Batal</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="btnSimpanPerkara">
+      <property name="text">
+       <string>Simpan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="btnUbahPerkara">
+      <property name="text">
+       <string>Ubah</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>436</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuHalaman_Utama">
+    <property name="title">
+     <string>Halaman Utama</string>
+    </property>
+    <addaction name="actionData_Anggota"/>
+    <addaction name="actionData_Film"/>
+    <addaction name="actionData_Admin"/>
+   </widget>
+   <addaction name="menuHalaman_Utama"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionData_Anggota">
+   <property name="text">
+    <string>Data Anggota</string>
+   </property>
+  </action>
+  <action name="actionData_Film">
+   <property name="text">
+    <string>Data Film</string>
+   </property>
+  </action>
+  <action name="actionData_Admin">
+   <property name="text">
+    <string>Data Admin</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
